@@ -20,3 +20,6 @@ public:
 extern HTTPCURLDLLCPP_API int nhttpcurldllcpp;
 
 HTTPCURLDLLCPP_API int fnhttpcurldllcpp(void);
+
+// http 请求
+extern "C" _declspec(dllexport) int http(char url[1024], int method, char body[1024], char response[1024]);
